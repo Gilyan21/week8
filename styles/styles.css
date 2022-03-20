@@ -99,7 +99,7 @@ h1 {
 
 .header__hero-image {
     grid-area: header__hero-image;
-    background-image: url(/assets/hero-background.svg);
+    background-image: url(../assets/hero-background.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     margin-left: 10%;
@@ -114,7 +114,7 @@ header .btn-buy {
     padding-left: 7%;
     font-weight: 400;
     font-size: 5vh;
-    background-image: url(/assets/card-icon.svg);
+    background-image: url(../assets/card-icon.svg);
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: 85%;
