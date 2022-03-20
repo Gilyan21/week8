@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url(/fonts/intro_regular.ttf);
+}
+
+.logo {
+    background-image: url(../assets/logo.svg);
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+h1 {
+    position: fixed;
+    left: 6%;
+    top: 0%;
+}
+
+.big-title {
+    color: #000000;
+    font-size: 9vh;
+    font-weight: 400;
+    font-family: 'Intro';
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: #5222D0;
+    font-family: 'Intro';
+    font-weight: 400;
+    color: white;
+    border-radius: 3vw;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn-fixed {
+    position: fixed;
+    right: 3%;
+    top: 5%;
+    padding: 0;
+    margin: 0;
+}
+
+.description {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 300;
+    font-family: 'Roboto Slab';
+    line-height: 5vh;
+}
+
+.header {
+    display: grid;
+    margin-left: 10%;
+    margin-top: 0%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 15vh 1fr 1fr;
+    grid-template-areas: ". ."
+        "header__text header__hero-image"
+        "btn-buy header__hero-image";
+}
+
+.btn-cart {
+    grid-area: btn-cart;
+    text-align: left;
+    width: 9vw;
+    height: 6vh;
+    padding-left: 1.5vw;
+    background-image: url(../assets/cart-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 85% 50%;
+    font-size: 2vh;
+    font-family: 'Intro';
+}
+
+.header__text {
+    grid-area: header__text;
+}
+
+.header__text-title {
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.header__text-description {
+    margin-right: 5%;
+    padding-bottom: 5%;
+    text-align: left;
+}
+
+.header__hero-image {
+    grid-area: header__hero-image;
+    background-image: url(/assets/hero-background.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 10%;
+}
+
+header .btn-buy {
+    grid-area: btn-buy;
+    width: 18vw;
+    height: 10vh;
+    border: none;
+    text-align: left;
+    padding-left: 7%;
+    font-weight: 400;
+    font-size: 5vh;
+    background-image: url(/assets/card-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 85%;
+}
+
+nav {
+    position: fixed;
+    top: 90%;
+    left: 8%;
+}
+
+.nav__item {
+    list-style: none;
+    display: inline;
+    padding-right: 34px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.nav__link:visited {
+    color: #5222D0;
+}
+
+.articles {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 1.5%;
+    margin-bottom: 10%;
+    grid-template-columns: repeat(3, minmax(30px, 1fr));
+    grid-template-rows: 25vh 1.5fr 0.5fr;
+    grid-template-areas: "articles__title articles__title articles__title"
+        "article1 article2 article3"
+        "article4 article5 subscriptions";
+    column-gap: 1em;
+}
+
+.articles__title {
+    grid-area: articles__title;
+}
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
+}
+
+.article3 {
+    grid-area: article3;
+}
+
+.article4 {
+    grid-area: article4;
+}
+
+.article5 {
+    grid-area: article5;
+}
+
+.article__title {
+    font-family: 'Intro';
+    font-weight: 400;
+    font-size: 4.5vh;
+    text-transform: uppercase;
+}
+
+.article__image {
+    max-width: 100%;
+}
+
+.article__text {
+    text-align: left;
+    padding-top: 0%;
+}
+
+.article1,
+.article2,
+.article3,
+.article4,
+.article5 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.article:hover {
+    border: 1px solid #BB2247;
+}
+
+.subscriptions {
+    grid-area: subscriptions;
+    margin-top: 10%;
+    margin-right: 10%;
+    background-color: #EC615B;
+}
+
+.subscriptions__title {
+    color: white;
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 5%;
+
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.email {
+    display: block;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 5vh;
+}
+
+.subscriptions__button {
+    width: 10vw;
+    height: 6vh;
+    margin-left: 5%;
+}
+
+::placeholder {
+    padding-left: 5%;
+}
